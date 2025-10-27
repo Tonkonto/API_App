@@ -38,7 +38,7 @@ Authenticate a user.
 ### 2. `POST /logout`
 
 **Request Headers:**
-```json
+```
 Authorization:	Bearer <token>
 ```
 
@@ -54,7 +54,7 @@ Authorization:	Bearer <token>
 Authenticate a user.
 
 **Request Headers:**
-```json
+```
 Authorization:	Bearer <token>
 ```
 
@@ -71,7 +71,7 @@ Authorization:	Bearer <token>
 Authenticate a user.
 
 **Request Headers:**
-```json
+```
 AdminKey:	<admin_key>
 ```
 **Request Body:**
@@ -89,3 +89,14 @@ AdminKey:	<admin_key>
     "balance_usd": "8.00"
 }
 ```
+
+# Project deployment
+## 1. Create database
+```
+CREATE DATABASE api_app_db OWNER api_user;
+```
+## 2. Apply migrations
+```
+dotnet ef database update
+```
+## 3. Run
