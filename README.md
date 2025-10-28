@@ -95,8 +95,9 @@ AdminKey:	<admin_key>
 ```
 CREATE DATABASE api_app_db OWNER api_user;
 ```
-## 2. Apply migrations
+## 2. Generate, apply migrations
 ```
+dotnet ef migrations add Migrat
 dotnet ef database update
 ```
 ## 3. Run
