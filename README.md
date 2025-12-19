@@ -93,6 +93,7 @@ AdminKey:	<admin_key>
 # Project deployment
 ## 1. Create database
 ```
+CREATE ROLE api_user LOGIN PASSWORD 'api_user_pass';
 CREATE DATABASE api_app_db OWNER api_user;
 ```
 ## 2. Generate, apply migrations
